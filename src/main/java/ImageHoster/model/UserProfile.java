@@ -27,6 +27,7 @@ public class UserProfile {
     @Column(name = "mobile_number")
     private String mobileNumber;
 
+    //Default Constructor
     public UserProfile() {
     }
 
@@ -34,6 +35,8 @@ public class UserProfile {
         return id;
     }
 
+
+    //Define Getters and Setters
     public void setId(Integer id) {
         this.id = id;
     }

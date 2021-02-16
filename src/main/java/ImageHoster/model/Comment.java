@@ -21,20 +21,21 @@ public class Comment {
     @Column(name = "createdDate")
     private LocalDate createdDate;
 
-
+    //Many To One Relationship with User Table
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "userid")
     private User user;
 
-
+    //Many To One Relationship with Image Table
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "Image")
     private Image Image;
 
+    //Default Constructor
     public Comment() {
     }
 
-
+    //Define Getters and Setters
     public Integer getId() {
         return id;
     }

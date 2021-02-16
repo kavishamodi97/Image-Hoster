@@ -42,7 +42,7 @@ public class User {
     private List<Image> images = new ArrayList<>();
 
     //user table reference to list of comment from comment table
-    @OneToMany(mappedBy = "user",cascade = CascadeType.REMOVE, fetch = FetchType.EAGER )
+    @OneToMany(mappedBy = "user", cascade = CascadeType.REMOVE, fetch = FetchType.EAGER)
     private List<Comment> comments = new ArrayList<>();
 
 

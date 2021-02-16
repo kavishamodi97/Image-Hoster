@@ -30,6 +30,7 @@ public class Tag {
     @ManyToMany(fetch = FetchType.LAZY, mappedBy = "tags")
     private List<Image> images;
 
+    //Default Constructor
     public Tag() {
     }
 
@@ -37,6 +38,8 @@ public class Tag {
         this.name = tagName;
     }
 
+
+    //Define Getters and Setters
     public int getId() {
         return id;
     }

@@ -11,6 +11,7 @@ public class CommentService {
     @Autowired
     private CommentRepository commentRepository;
 
+    //This Service Method calls saveComments() in Repository to save comments in database
     public void saveComments(Comment comment) {
         commentRepository.saveComments(comment);
     }

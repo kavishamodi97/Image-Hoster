@@ -14,6 +14,7 @@ public class CommentRepository {
     @PersistenceUnit(unitName = "imageHoster")
     private EntityManagerFactory emf;
 
+    //The Repository Method Save Comments in comments Table in ImageHoster Database
     public Comment saveComments(Comment newComment) {
         EntityManager em = emf.createEntityManager();
         EntityTransaction transaction = em.getTransaction();

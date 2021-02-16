@@ -50,9 +50,11 @@ public class Image {
     @ManyToMany(fetch = FetchType.LAZY)
     private List<Tag> tags = new ArrayList<>();
 
+    //One to Many Relationship which Mapped by Image
     @OneToMany(mappedBy = "Image", cascade = CascadeType.REMOVE, fetch = FetchType.LAZY)
     private List<Comment> comments = new ArrayList<>();
 
+    //Default Constructor
     public Image() {
     }
 
@@ -72,6 +74,7 @@ public class Image {
     }
 
 
+    //Define Getters and Setters
     public Integer getId() {
         return id;
     }

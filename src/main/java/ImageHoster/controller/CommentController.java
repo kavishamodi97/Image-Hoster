@@ -25,6 +25,7 @@ public class CommentController {
     private CommentService commentService;
 
 
+    //This Controller Method creates a new Comment on Specific Image
     @RequestMapping(value = "/image/{imageId}/{imageTitle}/comments", method = RequestMethod.POST)
     public String createComment(@RequestParam("comment") String comment, Comment setCommentInfo, @PathVariable("imageTitle") String imageTitle, @PathVariable("imageId") Integer imageId, HttpSession session) {
 
